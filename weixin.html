@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>微信墙</title>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/weixin.js"></script>
+	<link rel="stylesheet" href="lib/weixin.css">
+	
+</head>
+<body>
+	<div id="shadow"></div>
+	<div id="alert_name">
+	<div id="front">
+		<span>请输入您的姓名</span><br><input type="text" id="alert_name_input"><br>
+		<span>请选择您的头像</span>
+		<div id="head">
+			<input type="radio" name="head" class="head_radio">
+			<img src="img/head0.jpg" alt="" class="head_img head_img1">
+			<input type="radio" name="head" class="head_radio">
+			<img src="img/head1.jpg" alt="" class="head_img head_img2">
+			<input type="radio" name="head" class="head_radio">
+			<img src="img/head2.jpg" alt="" class="head_img head_img3">
+			<input type="radio"  name="head"class="head_radio">
+			<img src="img/head3.jpg" alt="" class="head_img head_img4">
+			<input type="radio"  name="head"class="head_radio">
+			<img src="img/head4.jpg" alt="" class="head_img head_img5">
+			<input type="radio"  name="head"class="head_radio">
+			<img src="img/head5.jpg" alt="" class="head_img head_img6">
+			<input type="radio"  name="head"class="head_radio">
+			<img src="img/head6.jpg" alt="" class="head_img head_img7">
+			<input type="radio"  name="head"class="head_radio">
+			<img src="img/head7.jpg" alt="" class="head_img head_img8">
+		</div>
+		<div id="button_confrim">确认</div>
+	</div>
+	<div id="back">
+		<span>检测到您的账号</span><br>
+		<img src="img/empty_photo.png" alt="" class="head_img_log"><br>
+		<span>爱谁谁</span><br>
+		<div id="log_off">注销</div>
+		<div id="button_confrim_back">确认</div>
+	</div>
+	</div>
+	<div id="container">
+		<div id="show">
+			<div id="roll">
+				<div class="talk"><img src="img/weixin.jpg" alt=""><p class="talk_name">潘睿:</p><p class="talk_word">请大家畅所欲言,不用拘谨</p></div>
+				<div class="talk"><img src="img/weixin.jpg" alt=""><p class="talk_name">杨芳青:</p><p class="talk_word">请大家畅所欲言,不用拘谨</p></div>
+				<div class="talk"><img src="img/weixin.jpg" alt=""><p class="talk_name">你是谁:</p><p class="talk_word">请大家畅所欲言,不用拘谨</p></div>
+				<div class="talk"><img src="img/weixin.jpg" alt=""><p class="talk_name">爱谁谁:</p><p class="talk_word">请大家畅所欲言,不用拘谨</p></div>
+			</div>
+		</div>
+		<div id="input_text">
+			<form action="weixin.php" method="post">
+			<label for="talk_input">评论:</label><textarea name="talk_input" id="talk_input" cols="30" rows="10"></textarea>
+			
+			</form>
+			<button id="submit">提交</button><button id="reset">清空</button>
+		</div>
+	</div>
+</body>
+</html>
